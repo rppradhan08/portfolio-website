@@ -1,16 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Raj Praveen Pradhan's Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="assets/website-logo.png" type="image/png">
 </head>
-
 <body>
-    <h1>Welcome to My Portfolio!</h1>
-    <script src="script.js"></script>
-</body>
+    <header>
+        <div class="header-top">
+            <h1>Raj Praveen Pradhan</h1>
+            <button id="darkModeToggle" aria-label="Toggle Dark Mode" class="dark-mode-toggle">🌙</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://www.linkedin.com/in/raj-praveen-pradhan/">LinkedIn</a></li>
+                <li><a href="https://github.com/rppradhan08">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Experienced Data Scientist | Machine Learning Engineer with expertise in developing and deploying machine learning models. Passionate about creating data-driven solutions and continuously improving business outcomes using advanced data analysis and AI techniques. I have a proven track record of success in diverse industries and have worked on various impactful projects in areas like healthcare, socio-economic welfare, and predictive maintenance.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div id="skills-container"></div>
+        </section>
+        
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div>
+                <h3>Pneumonia Detection Web App</h3>
+                <p>Tech Stack: Python, Flask, CNN, AWS-EC2</p>
+                <p>Developed a web-based application for pneumonia detection using Convolutional Neural Networks (CNN) and deep learning. Achieved a high sensitivity of 94% in detecting pneumonia from X-ray scans.</p>
+                
+                <h3>Socio-Economic Welfare Analysis</h3>
+                <p>Tech Stack: Python, Pandas, Matplotlib</p>
+                <p>Performed socio-economic welfare analysis to identify the top countries in dire need of aid by applying clustering techniques like K-Means and hierarchical clustering.</p>
+                
+                <h3>Rental Service Demand Prediction</h3>
+                <p>Tech Stack: Python, Seaborn, Pandas</p>
+                <p>Built a predictive model to understand demand for shared bikes after the COVID-19 lockdown. The model demonstrated a strong correlation with an R-squared score of 83%.</p>
+            </div>
+        </section>
+
+        <section id="resume">
+            <h2>Download My Resume</h2>
+            <p>Interested in working together? Download my resume below:</p>
+            <a href="https://drive.google.com/file/d/1NlExo9MTdOy6hWAr9MchnncYLxUKdk8m/view?usp=drive_link" download="John_Doe_Resume.pdf" class="resume-button">Download Resume</a>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+        <button id="backToTop" aria-label="Back to Top">⬆️</button>
+    </main>
+
+    <footer>
+        <p>© 2024 Raj Praveen Pradhan. All Rights Reserved.</p>
+    </footer>
+    <script src="js/script.js" defer></script>
+</body>
 </html>
