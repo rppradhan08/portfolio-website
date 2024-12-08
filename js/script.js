@@ -103,3 +103,66 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+
+
+// Project Section data
+const projects = [
+    {
+      title: "Pneumonia Detection Web App",
+      techStack: "Python, Flask, CNN, AWS-EC2",
+      description:
+        "Developed a web-based application for pneumonia detection using CNNs and deep learning. Achieved 94% sensitivity in detecting pneumonia from X-ray scans.",
+      githubLink: "https://github.com/yourusername/pneumonia-detection",
+    },
+    {
+      title: "Socio-Economic Welfare Analysis",
+      techStack: "Python, Pandas, Matplotlib",
+      description:
+        "Performed socio-economic welfare analysis to identify countries in need of aid using clustering techniques like K-Means.",
+      githubLink: "https://github.com/yourusername/socio-economic-analysis",
+    },
+    {
+      title: "Rental Service Demand Prediction",
+      techStack: "Python, Seaborn, Pandas",
+      description:
+        "Built a predictive model to understand demand for shared bikes post-COVID-19 lockdown, achieving an R-squared score of 83%.",
+      githubLink: "https://github.com/yourusername/rental-demand-prediction",
+    },
+    // Add more projects here
+  ];
+  
+  const visibleCount = 6;
+  let showingAll = false;
+  
+  function renderProjects() {
+    const container = document.getElementById("project-cards-container");
+    container.innerHTML = ""; // Clear existing cards
+  
+    const projectsToDisplay = showingAll ? projects : projects.slice(0, visibleCount);
+  
+    projectsToDisplay.forEach((project) => {
+      const card = document.createElement("div");
+      card.className = "project-card";
+  
+      card.innerHTML = `
+        <h3>${project.title}</h3>
+        <p><strong>Tech Stack:</strong> ${project.techStack}</p>
+        <p>${project.description}</p>
+        <a href="${project.githubLink}" target="_blank" class="github-link">View on GitHub</a>
+      `;
+  
+      container.appendChild(card);
+    });
+  }
+  
+  document.getElementById("toggle-projects-button").addEventListener("click", () => {
+    showingAll = !showingAll;
+    renderProjects();
+  
+    const button = document.getElementById("toggle-projects-button");
+    button.textContent = showingAll ? "See Less" : "See More";
+  });
+  
+  // Initial render
+  renderProjects();
+  
