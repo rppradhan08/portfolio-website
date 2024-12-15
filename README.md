@@ -1,3 +1,3 @@
 ## About this Project
 
-This is a Portfolio website built using MERN stack
+This is a Portfolio website built using HTML, CSS and Vanilla Javascript
