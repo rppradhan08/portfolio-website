@@ -51,7 +51,7 @@ function setupBackToTopButton() {
 
 // Fetch and render skills
 function renderSkills() {
-  fetch('/data/skills.json')
+  fetch('data/skills.json')
       .then(response => response.json())
       .then(data => {
           const skillsContainer = document.getElementById('skills-container');
@@ -93,7 +93,7 @@ function renderProjects(projects) {
 
 // Fetch and render projects data
 function fetchAndRenderProjects() {
-  fetch('/data/projects.json')
+  fetch('data/projects.json')
       .then(response => response.json())
       .then(data => {
           renderProjects(data.projects);
