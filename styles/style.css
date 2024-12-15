@@ -1,6 +1,7 @@
 /* Global Styles */
 body {
   font-family: Arial, sans-serif;
+  text-align: center;
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -19,9 +20,9 @@ header {
   top: 0;
   z-index: 10;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative; /* Added to allow absolute positioning of the toggle button */
 }
 
-/* Top Header Content (Name + Dark Mode Button) */
 .header-top {
   display: flex;
   justify-content: space-between;
@@ -35,6 +36,9 @@ header {
 }
 
 .dark-mode-toggle {
+  position: absolute; /* Position it relative to the header */
+  top: 20px; /* Distance from the top */
+  right: 20px; /* Distance from the right */
   background-color: transparent;
   border: 2px solid #ff9800;
   border-radius: 50%;
@@ -272,8 +276,6 @@ body.dark-mode .github-link:hover {
   color: #121212;
 }
 
-
-
 .github-link {
   display: inline-block;
   margin-top: 0.5rem;
@@ -306,7 +308,6 @@ body.dark-mode .github-link:hover {
   background: #ff9800;
 }
 
-
 .socials-section {
   display: flex;
   gap: 10px;
@@ -328,4 +329,34 @@ body.dark-mode .github-link:hover {
 
 .social-icon:hover {
   transform: scale(1.2);
+}
+
+/* Hero Section Styling */
+.hero {
+  transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  overflow: hidden; /* Prevents content from overflowing */
+  height: auto; /* Default height */
+}
+
+.hero.collapsed {
+  max-height: 0; /* Collapse the hero section */
+  opacity: 0; /* Makes the content invisible */
+  overflow: hidden;
+}
+
+/* Navbar Styling */
+nav {
+  display: none; /* Hide navbar initially */
+  position: fixed; /* Fix the navbar to the top */
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #928b8b;
+  padding: 10px;
+  z-index: 10;
+  transition: top 0.3s ease-in-out;
+}
+
+nav.show {
+  display: flex; /* Show navbar when scrolling down */
 }

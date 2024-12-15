@@ -10,13 +10,13 @@
       "title": "Socio-Economic Welfare Analysis",
       "techStack": "Python, Pandas, Matplotlib",
       "description": "Performed socio-economic welfare analysis to identify countries in need of aid using clustering techniques like K-Means.",
-      "githubLink": "https://github.com/rppradhan08/socio-economic-analysis"
+      "githubLink": "https://github.com/rppradhan08/Socio-Economic-Countries-Clustering"
     },
     {
       "title": "Rental Service Demand Prediction",
       "techStack": "Python, Seaborn, Pandas",
       "description": "Built a predictive model to understand demand for shared bikes post-COVID-19 lockdown, achieving an R-squared score of 83%.",
-      "githubLink": "https://github.com/rppradhan08/rental-demand-prediction"
+      "githubLink": "https://github.com/rppradhan08/bike-rental-analysis"
     },
     {
       "title": "Predictive Maintenance for Solar Inverters",
