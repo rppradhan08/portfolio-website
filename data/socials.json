@@ -1,0 +1,14 @@
+{
+    "socials": [
+      {
+        "name": "GitHub",
+        "url": "https://github.com/rppradhan08",
+        "iconPath": "assets/icons/github-icon.png"
+      },
+      {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/raj-praveen-pradhan",
+        "iconPath": "assets/icons/linkedin-icon.png"
+      }
+    ]
+  }

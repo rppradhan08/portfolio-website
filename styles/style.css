@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -47,10 +48,6 @@ header {
 .dark-mode-toggle:hover {
   background-color: #ff9800;
   color: #fff;
-}
-
-.dark-mode-toggle:focus {
-  box-shadow: 0 0 5px #ff9800;
 }
 
 /* Navigation Bar Styling */
@@ -165,8 +162,6 @@ body.dark-mode header, body.dark-mode footer {
   background: #333;
   color: #fff;
 }
-/* ---------- */
-
 
 /* Skill Bubbles Styling */
 #skills-container {
@@ -212,13 +207,11 @@ body.dark-mode header, body.dark-mode footer {
   background-color: #ff9800;
 }
 
-
 /* Section highlighter */
 nav ul li a.active {
   color: #ff9800;
   font-weight: bold;
 }
-
 
 /* Resume Button */
 .resume-button {
@@ -234,20 +227,6 @@ nav ul li a.active {
 .resume-button:hover {
   background-color: #ff9800;
 }
-
-
-/* Sticky nav bar */
-header {
-  background: #333;
-  color: #fff;
-  padding: 1rem 0;
-  text-align: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional for visual separation */
-}
-
 
 /* Project Section */
 .projects-grid {
@@ -270,6 +249,30 @@ header {
   transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+body.dark-mode .project-card {
+  background: #333;
+  color: #fff;
+  border: 1px solid #444;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+body.dark-mode .github-link {
+  background: #ff9800;
+  color: #333;
+}
+
+body.dark-mode .github-link:hover {
+  background: #fff;
+  color: #121212;
+}
+
+
 
 .github-link {
   display: inline-block;
@@ -301,4 +304,28 @@ header {
 
 .toggle-button:hover {
   background: #ff9800;
+}
+
+
+.socials-section {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
 }

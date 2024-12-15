@@ -1,0 +1,46 @@
+{
+  "projects": [
+    {
+      "title": "Pneumonia Detection Web App",
+      "techStack": "Python, Flask, CNN, AWS-EC2",
+      "description": "Developed a web-based application for pneumonia detection using CNNs and deep learning. Achieved 94% sensitivity in detecting pneumonia from X-ray scans.",
+      "githubLink": "https://github.com/rppradhan08/pneumonia-detection"
+    },
+    {
+      "title": "Socio-Economic Welfare Analysis",
+      "techStack": "Python, Pandas, Matplotlib",
+      "description": "Performed socio-economic welfare analysis to identify countries in need of aid using clustering techniques like K-Means.",
+      "githubLink": "https://github.com/rppradhan08/socio-economic-analysis"
+    },
+    {
+      "title": "Rental Service Demand Prediction",
+      "techStack": "Python, Seaborn, Pandas",
+      "description": "Built a predictive model to understand demand for shared bikes post-COVID-19 lockdown, achieving an R-squared score of 83%.",
+      "githubLink": "https://github.com/rppradhan08/rental-demand-prediction"
+    },
+    {
+      "title": "Predictive Maintenance for Solar Inverters",
+      "techStack": "Python, Shell Scripting, XGBoost, AWS EC2, Datastudio, MySQL, Scikit-learn, Pandas",
+      "description": "Developed an ML-powered predictive maintenance solution for solar inverter systems to forecast equipment failures and reduce downtime. Integrated multiple data sources, including sensor data and operational metrics, to build a machine learning model predicting equipment failure with an accuracy rate above 80%. Created real-time dashboards in Datastudio to monitor equipment health and set thresholds for maintenance triggers.",
+      "githubLink": "https://github.com/youtname/project"
+    },
+    {
+      "title": "AI Agent for Tax Credit Form Management",
+      "techStack": "Python, Flowise, Streamlit, AWS Lambda, AWS Cloudwatch, CodePipeline, Langchain AI Agents, Postgres SQL",
+      "description": "Built an AI-driven agent for automating the tax credit form management process, simplifying tax rebate workflows for homeowners and tenants. The system extracts and verifies receipt data against PDF guidelines, ensuring compliance and improving approval rates. Integrated the solution with the EcoYze platform, streamlining the user experience and increasing processing efficiency by 40%.",
+      "githubLink": "https://github.com/youtname/project"
+    },
+    {
+      "title": "Solar and Wind Power Prediction System",
+      "techStack": "Python, Shell Scripting, FBProphet, AWS EC2, Datastudio, MySQL, Scikit-learn, Pandas",
+      "description": "Designed a predictive analytics system for forecasting solar and wind power generation, integrating real-time sensor data with historical weather patterns. Developed a machine learning model using time-series forecasting techniques to predict energy production. Created a monitoring dashboard to visualize power output predictions and track discrepancies.",
+      "githubLink": "https://github.com/youtname/project"
+    },
+    {
+      "title": "Serverless Rebate Order and Approval System",
+      "techStack": "Python, Flowise, Streamlit, AWS Lambda, AWS Cloudwatch, CodePipeline, Langchain AI Agents, Postgres SQL",
+      "description": "Developed a serverless application using AWS Lambda to automate the rebate order and approval process, reducing manual errors and processing time. Built the front end using Streamlit, allowing users to submit orders and track status in real time. Integrated receipt validation with EnergyStar and PNNL API to ensure eligibility and compliance with rebate guidelines. Developed a CI/CD pipeline across the SDLC lifecycle using AWS CodePipeline.",
+      "githubLink": "https://github.com/youtname/project"
+    }
+  ]
+}
